@@ -35,7 +35,7 @@ def str_with_unc(value, upper, lower=None):
     """
 
     # Only bother with unicode if this is Python 3.
-    pm = u"±" if type(u"") is type("") else "+/-"
+    pm = "±" if type("") is type("") else "+/-"
 
     # If no errors are available, simply return the value alone
     if upper is None:
